@@ -4,7 +4,7 @@
   --clr-headings: #212353;
   --clr-btn-txt: #ffffff;
   --clr-light-purple: #e4bbe8;
-  --clr-btn-purple: #c182c8;
+  --clr-purple: #c182c8;
   --clr-btn-pink: #faa4ab;
 
   --ff-headings: "Pacifico", cursive;
@@ -19,7 +19,9 @@
 
 body {
   font-family: var(--ff-text-primary);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--clr-headings);
+  border: 1px solid red;
 }
 
 a {
@@ -28,6 +30,8 @@ a {
 
 #container {
   width: 100%;
+  text-align: center;
+  border: 1px solid blue;
 }
 
 /*NavBar*/
@@ -36,22 +40,28 @@ a {
   display: flex;
   width: 100%;
   height: 10vh;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-nav > img {
-  height: 15vh;
-  margin: 2vh;
-  display: none;
+  height: 8vh;
 }
 
 ul {
-  display: none;
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+  
 }
 
 ul a {
-  font-family: var(--ff-headings);
+  font-family: var(--ff-text-primary);
   color: var(--clr-headings);
   font-size: 2.2rem;
+  display: none;
 }
 
 
@@ -68,28 +78,27 @@ ul a {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 3rem;
   line-height: 1.5;
-  margin-bottom: 2rem;
 }
 
-#headings h2,
-h3 {
-  font-family: var(--ff-headings);
-  line-height: 1.25;
-}
 
 #headings h2 {
+  font-family: var(--ff-headings);
+  line-height: 1.25;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-#headings h3 {
-  margin-bottom: 4rem;
+.subheading {
+  font-family: var(--ff-headings);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 /*Landing Page*/
 
 #landing-page {
   position: relative;
+  margin-bottom: 15vh;
 }
 
 .image-center {
@@ -106,6 +115,27 @@ h3 {
   opacity: 0.6;
 }
 
+
+/*Qui Suis-Je*/
+
+#qui-suis-je {
+  background-color: var(--clr-purple);
+  width: 90%;
+  border-radius: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#profile-pic {
+  max-width: 60%;
+  margin: 3rem;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.40);
+  border-radius: 1rem;
+}
 
 
 /*MEDIA QUERIES*/
@@ -132,16 +162,13 @@ h3 {
   #main-image {
     opacity: 1;
   }
+
 }
 
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
-  ul {
-    list-style: none;
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-    align-items: center;
+  ul a {
+    display: inline;
   }
   .main-nav > img {
     display: inline;
@@ -153,9 +180,21 @@ h3 {
   #headings {
     margin-left: 5rem;
   }
+  #qui-suis-je {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  
+  #photo-container {
+    order: 1;
+  }
 
 }
 
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
 }
+
+
+
+
