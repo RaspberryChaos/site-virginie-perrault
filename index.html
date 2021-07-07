@@ -12,15 +12,15 @@
       <nav class="main-nav">
         <img
           src="imgs/afmb_logo.png"
-          alt="Logo of Association Française de Massage pour Bébé"
+          alt="Logo Association Française de Massage pour Bébé"
           id="logo"
         />
         <ul class="nav-collapse">
-          <li><a href="#">Qui suis-je?</a></li>
-          <li><a href="#">Prestations</a></li>
+          <li><a href="#qui-suis-je">Qui suis-je?</a></li>
+          <li><a href="#prestations">Prestations</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <img src="imgs/menu-icon.png" />
+        <img src="imgs/menu-icon.png" alt="drop down menu icon" />
       </nav>
 
       <section id="landing-page">
@@ -50,11 +50,14 @@
 
       <section id="qui-suis-je">
         <div id="photo-container">
-          <img src="imgs/virginie.jpg" alt="Virginie Perrault" id="profile-pic">
+          <img
+            src="imgs/virginie.jpg"
+            alt="Virginie Perrault"
+            id="profile-pic"
+          />
         </div>
 
         <div id="about">
-
           <h2 class="subheading">Virginie Perrault</h2>
           <p>
             Je m’appelle Virginie, je suis âgée de 39 ans, je suis maman de deux
@@ -63,21 +66,84 @@
             Avec mon savoir, mes connaissances et ma bienveillance, j’aimerais
             accompagner les mamans à vivre leur maternité.
           </p>
-          
+
           <h3 class="subheading">Mes Diplômes</h3>
-          
+
           <p>Diplôme d'État d'Auxiliaire de Puériculture</p>
-          
+
           <p>
-            Instructeur en Massage pour Bébé, International Association of Infant
-            Massage
+            Instructeur en Massage pour Bébé, International Association of
+            Infant Massage
           </p>
-          
+
           <p>Massage Femme Enceinte selon Ayurvéda</p>
-          
+
           <p>Attestation Monitrice en Portage en Écharpe JPMBB</p>
         </div>
-        </section>
+      </section>
+
+      <section id="prestations">
+        <h2 class="section-heading">Prestations</h2>
+        <p class="location">
+          Séances à domicile ou au 164 quinquies rue d’aguesseau, 92100
+          Boulogne-Billancourt
+        </p>
+
+        <div id="prestations-grid">
+          <div id="massage-bebe" class="grid-item">
+            <h3 class="grid-heading">Atelier Massage Bébé</h3>
+            <img
+              src="imgs/massage-bebe.jpg"
+              alt="massage bébé"
+              class="prestations-image"
+            />
+            <p>
+              Atelier de 5 séances qui vous permettront de découvrir le massage
+              complet de votre bébé et d'en apprécier les bienfaits.
+            </p>
+            <p class="extra-info hidden">
+              Le massage permet de créer avec son bébé un lien d'attachement et
+              de sécurité mais aussi de stimuler tous les systèmes vitaux et
+              soulager les coliques et la constipation et permet au bébé de se
+              relaxer (amélioration du sommeil). 1ère séance: massage des jambes
+              2ème séance: massage du ventre et coliques 3ème séance: massage
+              poitrine et bras 4ème séance: massage visage et dos 5ème séance:
+              massage complet 5 Séances de 1h30 minutes • 200 € Séance
+              découverte 60€
+            </p>
+            <div class="buttons">
+              <button class="btn btn-esp">En Savoir Plus</button>
+              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+            </div>
+          </div>
+
+          <div id="portage-echarpe" class="grid-item">
+            <h3 class="grid-heading">Atelier Portage en Écharpes</h3>
+            <img
+              src="imgs/portage-en-echarpes.jpg"
+              alt="portage en écharpes"
+              class="prestations-image"
+            />
+            <p>
+              Atelier d'apprentissage à l'utilisation d'écharpes de portage
+              JPMBB durant les premières années de votre bébé.
+            </p>
+            <p class="extra-info hidden">
+              Atelier d'apprentissage à l'utilisation d'écharpes de portage
+              JPMBB durant les premières années de votre bébé. Le bébé a un
+              besoin fondamental de se sentir contenu et enveloppé par l'adulte.
+              Le portage en écharpe permet au bébé porté de relâcher ses
+              muscles. La digestion est alors plus efficace et cela diminue les
+              coliques et les reflux. Le sommeil est favorisé par le bercement.
+              1 heure • 60 €
+            </p>
+            <div class="buttons">
+              <button class="btn btn-esp">En Savoir Plus</button>
+              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="app.js"></script>
   </body>

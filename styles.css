@@ -6,9 +6,20 @@
   --clr-light-purple: #e4bbe8;
   --clr-purple: #c182c8;
   --clr-btn-pink: #faa4ab;
+  --clr-btn-text: #fffffff;
+
+  --clr-massage-bebe: rgba(182, 178, 233, 0.75);
+  --clr-portage-echarpe: rgba(123, 215, 208, 0.75);
+  --clr-massage-enceinte: rgba(251, 202, 227, 0.75);
+  --clr-conseil: rgba(227, 176, 232, 0.75);
+  --clr-papa: rgba(181, 209, 250, 0.75);
+  --clr-ecole: rgba(250, 201, 164, 0.75);
+
 
   --ff-headings: "Pacifico", cursive;
   --ff-text-primary: "Montserrat", sans-serif;
+
+  --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -32,6 +43,20 @@ a {
   width: 100%;
   text-align: center;
   border: 1px solid blue;
+}
+
+.btn {
+  border-radius: 2em;
+  color: var(--clr-btn-txt);
+  padding: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.btn-esp {
+  background-color: var(--clr-purple);
+  border: none;
 }
 
 /*NavBar*/
@@ -75,7 +100,7 @@ ul a {
 
 #headings h1 {
   font-family: var(--ff-headings);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: var(--text-shadow);
   font-size: 3rem;
   line-height: 1.5;
 }
@@ -92,6 +117,17 @@ ul a {
   font-family: var(--ff-headings);
   font-size: 1.8rem;
   margin-bottom: 2rem;
+}
+
+.section-heading {
+  font-family: var(--ff-headings);
+  text-shadow: var(--text-shadow);
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.location {
+  margin-bottom: 3rem;
 }
 
 /*Landing Page*/
@@ -137,6 +173,51 @@ ul a {
   border-radius: 1rem;
 }
 
+/*PRESTATIONS*/
+
+#prestations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item {
+  border-radius: 2rem;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin: 1rem 0;
+
+}
+
+.grid-item * {
+  padding: 0.75rem;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.prestations-image {
+  border-radius: 50%;
+  height: 25vh;
+  
+}
+
+#massage-bebe {
+  background-color: var(--clr-massage-bebe);
+}
+
+#portage-echarpe {
+  background-color: var(--clr-portage-echarpe);
+}
+
+
 
 /*MEDIA QUERIES*/
 
@@ -163,6 +244,18 @@ ul a {
     opacity: 1;
   }
 
+  .location {
+    width: 80%;
+    font-size: 1.75rem;
+    margin-bottom: 4rem;
+  }
+
+  #prestations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    margin: 1rem;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -187,6 +280,11 @@ ul a {
   
   #photo-container {
     order: 1;
+  }
+
+  .section-heading {
+    font-size: 4rem;
+    margin-top: 4rem;
   }
 
 }
