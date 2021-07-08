@@ -143,6 +143,8 @@ ul a {
 #landing-page {
   position: relative;
   margin-bottom: 15vh;
+  background: url("../imgs/main-image.jpeg") bottom center no-repeat;
+  background-size: 120%;
 }
 
 .image-center {
@@ -176,7 +178,6 @@ ul a {
 
 #profile-pic {
   max-width: 70%;
-  margin: 3rem;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.40);
   border-radius: 1rem;
 }
@@ -209,8 +210,6 @@ ul a {
   padding: 0.75rem;
 }
 
-
-
 .hidden {
   display: none;
 }
@@ -218,7 +217,9 @@ ul a {
 .prestations-image {
   border-radius: 50%;
   height: 25vh;
-  
+  width: 25vh;
+  object-fit: cover;
+  padding: 0;
 }
 
 #massage-bebe {
@@ -279,6 +280,11 @@ ul a {
     opacity: 1;
   }
 
+  #landing-page {
+    background: url("../imgs/main-image.jpeg") bottom right no-repeat;
+    background-size: 80%;
+  }
+
   .location {
     width: 80%;
     font-size: 1.75rem;
@@ -308,6 +314,11 @@ ul a {
   #headings {
     margin-left: 5rem;
   }
+
+  #landing-page {
+    background-size: 50%;
+  }
+
   #qui-suis-je {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -331,6 +342,9 @@ ul a {
 
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
+  #landing-page {
+    background-size: 30%;
+  }
 }
 
 
