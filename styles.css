@@ -129,6 +129,11 @@ ul a {
   margin: 2rem;
 }
 
+.profile-heading {
+  font-family: var(--ff-headings);
+  text-shadow: var(--text-shadow);
+}
+
 .location {
   margin-bottom: 3rem;
 }
@@ -166,14 +171,18 @@ ul a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 #profile-pic {
-  max-width: 60%;
+  max-width: 70%;
   margin: 3rem;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.40);
   border-radius: 1rem;
+}
+
+#about * {
+  padding: 1rem;
 }
 
 /*PRESTATIONS*/
@@ -243,6 +252,13 @@ ul a {
 
 /*Extra Small, Mobile*/
 @media (min-width: 500px) {
+  #profile-pic {
+    max-width: 50%;
+  }
+
+  h1.profile-heading{
+    font-size: 2.5rem;
+  }
 }
 
 /* Small Devices, Tablets */
