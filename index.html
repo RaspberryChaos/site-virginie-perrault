@@ -20,12 +20,13 @@
           />
         -->
         <ul class="nav-collapse">
+          <li class="title">Virginie Perrault</li>
           <li><a href="#qui-suis-je">Qui suis-je?</a></li>
           <li><a href="#prestations">Prestations</a></li>
           <li><a href="#">Avis</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <img src="imgs/menu-icon.png" alt="drop down menu icon" />
+        <img src="imgs/menu-icon.png" alt="drop down menu icon" id="menu-icon"/>
       </nav>
 
 <!--Landing Page-->
@@ -55,7 +56,7 @@
       </section>
 
 <!--Qui Suis-Je Section-->
-      <section id="qui-suis-je">
+      <section id="qui-suis-je" class="purple-container">
         <div id="photo-container">
           <img
             src="imgs/virginie.jpg"
@@ -100,28 +101,34 @@
         <div id="prestations-grid">
           <div id="massage-bebe" class="grid-item">
             <h3 class="grid-heading">Atelier Massage Bébé</h3>
-            <img
-              src="imgs/massage-bebe.jpg"
-              alt="massage bébé"
-              class="prestations-image"
-            />
-            <p>
-              Atelier de 5 séances qui vous permettront de découvrir le massage
-              complet de votre bébé et d'en apprécier les bienfaits.
-            </p>
-            <p class="extra-info hidden">
-              Le massage permet de créer avec son bébé un lien d'attachement et
-              de sécurité mais aussi de stimuler tous les systèmes vitaux et
-              soulager les coliques et la constipation et permet au bébé de se
-              relaxer (amélioration du sommeil). 1ère séance: massage des jambes
-              2ème séance: massage du ventre et coliques 3ème séance: massage
-              poitrine et bras 4ème séance: massage visage et dos 5ème séance:
-              massage complet 5 Séances de 1h30 minutes • 200 € Séance
-              découverte 60€
-            </p>
-            <div class="buttons">
+            <div class="prestations-details">
+              <img
+                src="imgs/massage-bebe.jpg"
+                alt="massage bébé"
+                class="prestations-image"
+              />
+              <div class="info">
+                <p>
+                  Atelier de 5 séances qui vous permettront de découvrir le massage
+                  complet de votre bébé et d'en apprécier les bienfaits.
+                </p>
+                <p class="extra-info hidden">
+                  Le massage permet de créer avec son bébé un lien d'attachement et
+                  de sécurité mais aussi de stimuler tous les systèmes vitaux et
+                  soulager les coliques et la constipation et permet au bébé de se
+                  relaxer (amélioration du sommeil). 1ère séance: massage des jambes
+                  2ème séance: massage du ventre et coliques 3ème séance: massage
+                  poitrine et bras 4ème séance: massage visage et dos 5ème séance:
+                  massage complet 5 Séances de 1h30 minutes • 200 € Séance
+                  découverte 60€
+                </p>
+                
+              </div>
+              
+            </div>
+            <div class="buttons-test">
               <button class="btn btn-esp">En Savoir Plus</button>
-              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+              <button class="btn btn-rdv">Prendre Rendez-Vous</button>
             </div>
           </div>
 
@@ -147,7 +154,7 @@
             <p class="price hidden">1 heure • 60 €</p>
             <div class="buttons">
               <button class="btn btn-esp">En Savoir Plus</button>
-              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+              <button class="btn btn-rdv">Prendre Rendez-Vous</button>
             </div>
           </div>
           <div id="massage-femme-enceinte" class="grid-item">
@@ -191,8 +198,7 @@
             <p class="price">1 heure • 40 €</p>
 
             <div class="buttons">
-              <button class="btn btn-esp">En Savoir Plus</button>
-              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
           <div id="papas" class="grid-item">
@@ -207,7 +213,7 @@
               possibilité de poser des questions sur la grossesse,
               l’accouchement et l’arrivée de bébé. Tous les thèmes sont abordés.
             </p>
-            <p class="extra-info hidden">
+            <p class="extra-info ">
               L’arrivée d’un enfant est un événement heureux qui touche
               l’ensemble de la famille. Le papa se sent de plus en plus concerné
               mais beaucoup moins informé que la maman. Je propose des tables
@@ -276,6 +282,67 @@
 <!--Contact Section-->
       <section id="contact">
         <h2 class="section-heading">Contact</h2>
+        <div class="purple-container contact-container">
+          <!-- 
+          <div class="contact-details">
+            
+              <div class="contact-group">
+                <img src="imgs/icon-phone.png" alt="téléphone" id="phone">
+                <p>Téléphone:</p>
+                <a href="tel:0660050162">06.60.05.01.62</a>
+              
+              <div class="contact-group">
+                <img src="imgs/icon-email.png" alt="email">
+                <p>Email: </p>
+                <a href="mailto: perrault.virginie@gmail.com">perrault.virginie@gmail.com</a>
+              </div>
+
+            </div>
+
+              <div class="contact-group">
+                <img src="imgs/icon-location.png" alt="adresse icon">
+                <p>Adresse:</p>
+                <p>164 quinquies rue d’aguesseau, 92100 Boulogne-Billancourt</p>
+              </div>
+              <div class=" flex">
+                <a href="https://www.facebook.com/ACCOMPAGNANTEPERINATALE/" target="_blank"><img src="imgs/facebook-icon.png" alt="facebook logo" class="sm-logo fb-logo"> </a>
+                <a href="https://www.instagram.com/virginie.perrault/" target="_blank"><img src="imgs/instagram-logo.png" alt="instagram logo" class="sm-logo"> </a>
+              </div>
+            -->
+              <!--
+
+                <div class="contact-group">
+                  <a href="https://www.facebook.com/ACCOMPAGNANTEPERINATALE/" target="_blank"><img src="imgs/facebook-icon.png" alt="facebook logo" class="sm-logo fb-logo"> Virginie Perrault, Bien naître et Bien être</a>
+                  <a href="https://www.instagram.com/virginie.perrault/" target="_blank"><img src="imgs/instagram-logo.png" alt="instagram logo" class="sm-logo"> Virginie Perrault</a>
+                </div>
+
+              </div>
+            -->
+<!--
+          <div id="contact-form">
+            <h2>Formulaire de Contact</h2>
+            <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+              
+              <div class="form-group">
+                <label for="name">Votre Nom</label>
+                <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+              </div>
+                      
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="form-control" placeholder="Votre Adresse Mail" required>
+              </div>
+              
+              <div class="form-group">
+                  <label for="message">Votre Message</label>
+                  <textarea placeholder="Ecrivez votre message ici" class="form-control" name="message" rows="10" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-rdv">Envoyer</button>
+            </form>
+          </div>
+        -->
+        </div>
       </section>
     </div>
     <script src="app.js"></script>
