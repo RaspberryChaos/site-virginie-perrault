@@ -70,9 +70,14 @@ ol {
   background-color: var(--clr-btn-pink);
 }
 
-.flex {
+.flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .buttons-test {
@@ -284,13 +289,14 @@ ul a:hover {
 }
 
 .sm-logo {
-  width: 1.25rem;
+  width: 2rem;
+  margin: 1rem;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  align-items: center;
 }
 
 .form-group {
@@ -313,15 +319,18 @@ ul a:hover {
 }
 
 .contact-group img {
-  width: 4rem;
+  width: 2.5rem;
 }
 
 .contact-group {
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
   border-radius: 2rem;
   align-items: center;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -440,6 +449,9 @@ ul a:hover {
     column-gap: 2rem;
     margin: 2rem;
   }
+.contact-group {
+  width: 80%;
+}
 
 }
 
