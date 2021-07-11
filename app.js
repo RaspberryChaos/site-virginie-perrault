@@ -1,5 +1,11 @@
 console.log("connected");
 
-//1hr
-//1hr
-//30min
+const btnPortageEcharpe = document.getElementById("esp-portage-echarpe");
+
+btnPortageEcharpe.addEventListener("click", () => {
+    document.getElementById("extra-info-pe").classList.toggle("hidden");
+    document.getElementById("brief-pe").classList.toggle("hidden");
+})
+
+
+   

@@ -160,6 +160,11 @@ ul a:hover {
   margin-bottom: 2rem;
 }
 
+.aide-soignante {
+  font-family: var(--ff-headings);
+  margin-bottom: 1rem;
+}
+
 .section-heading {
   font-family: var(--ff-headings);
   text-shadow: var(--text-shadow);
@@ -180,9 +185,11 @@ ul a:hover {
 
 #landing-page {
   position: relative;
-  margin-bottom: 15vh;
-  background: url("../imgs/main-image.jpeg") bottom center no-repeat;
-  background-size: 120%;
+  margin-bottom: 10vh;
+  background-image: url("../imgs/main-image-small70.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
 }
 
 .image-center {
@@ -314,7 +321,6 @@ ul a:hover {
 .form-group {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem;
   text-align: left;
 }
 
@@ -345,9 +351,21 @@ ul a:hover {
   width: 100%;
 }
 
+.blue {
+  background-color: var(--clr-papa);
+}
 
+.turquoise {
+  background-color: var(--clr-portage-echarpe);
+}
 
+.pink {
+  background-color: var(--clr-massage-femme-enceinte);
+}
 
+.light-purple {
+  background-color: var(--clr-light-purple);
+}
 
 /*MEDIA QUERIES*/
 
@@ -371,7 +389,7 @@ ul a:hover {
   }
 
   #headings h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .image-center {
@@ -394,8 +412,7 @@ ul a:hover {
   #landing-page {
     background-image: url("../imgs/main-image.jpeg");
     background-size: 60%;
-    background-repeat: no-repeat;
-    border: 1px solid green;
+    background-position: right 25%;
   }
 
   .location {
@@ -416,12 +433,21 @@ ul a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
+  .form-group {
+    padding: 0.5rem 2rem;
+  }
+
 }
 
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
   ul a {
     display: inline;
+  }
+
+  #landing-page {
+    background-size: 50%;
+    background-position: 90% 30%;
   }
 
   .header-buttons {
@@ -447,10 +473,6 @@ ul a:hover {
 
   #headings {
     margin-left: 5rem;
-  }
-
-  #landing-page {
-    background-size: 50%;
   }
 
   #qui-suis-je{

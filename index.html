@@ -35,7 +35,7 @@
           <h1>Bien naître et</h1>
           <h1>Bien être</h1>
           <h2>Virginie Perrault</h2>
-          <p class="subheading">
+          <p class="aide-soignante">
             Aide soignante et auxiliaire de puériculture au sein de l'hôpital
             public
           </p>
@@ -144,11 +144,11 @@
               alt="portage en écharpes"
               class="prestations-image"
             />
-            <p>
+            <p id="brief-pe">
               Atelier d'apprentissage à l'utilisation d'écharpes de portage
               JPMBB durant les premières années de votre bébé.
             </p>
-            <p class="extra-info hidden">
+            <p id="extra-info-pe" class="hidden">
               Atelier d'apprentissage à l'utilisation d'écharpes de portage
               JPMBB durant les premières années de votre bébé. Le bébé a un
               besoin fondamental de se sentir contenu et enveloppé par l'adulte.
@@ -156,9 +156,9 @@
               muscles. La digestion est alors plus efficace et cela diminue les
               coliques et les reflux. Le sommeil est favorisé par le bercement.
             </p>
-            <p class="price hidden">1 heure • 60 €</p>
+            <p class="price">1 heure • 60 €</p>
             <div class="buttons">
-              <button class="btn btn-esp">En Savoir Plus</button>
+              <button class="btn btn-esp" id="esp-portage-echarpe">En Savoir Plus</button>
               <button class="btn btn-rdv">Prendre Rendez-Vous</button>
             </div>
           </div>
@@ -290,26 +290,26 @@
         <div class="purple-container contact-container">
           
           <div class="contact-details">
-
-            <div class="contact-group">
+            <h2>Coordonnées</h2>
+            <div class="contact-group blue">
               <img src="imgs/icon-phone.png" alt="téléphone" id="phone">
               <p>Téléphone:</p>
               <a href="tel:0660050162">06.60.05.01.62</a>
             </div>
 
-            <div class="contact-group">
+            <div class="contact-group pink">
               <img src="imgs/icon-email.png" alt="email">
               <p>Email: </p>
               <a href="mailto: perrault.virginie@gmail.com">perrault.virginie@gmail.com</a>
             </div>
             
-            <div class="contact-group">
+            <div class="contact-group turquoise">
               <img src="imgs/icon-location.png" alt="adresse icon">
               <p>Adresse:</p>
               <p>164 quinquies rue d’aguesseau, 92100 Boulogne-Billancourt</p>
             </div>
              
-              <div class="contact-group flex">
+              <div class="contact-group flex light-purple">
                 <p>Réseaux sociaux:</p>
                 <a href="https://www.facebook.com/ACCOMPAGNANTEPERINATALE/" target="_blank"><img src="imgs/facebook-icon.png" alt="facebook logo" class="sm-logo fb-logo"> </a>
                 <a href="https://www.instagram.com/virginie.perrault/" target="_blank"><img src="imgs/instagram-logo.png" alt="instagram logo" class="sm-logo"> </a>
@@ -323,30 +323,30 @@
                 </div>
             -->
 
-<!--
+
           <div id="contact-form">
             <h2>Formulaire de Contact</h2>
             <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
               
               <div class="form-group">
-                <label for="name">Votre Nom</label>
+                <label for="name">Votre Nom *</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Votre nom" required>
               </div>
                       
               <div class="form-group">
-                <label for="email">E-mail</label>
+                <label for="email">E-mail *</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Votre Adresse Mail" required>
               </div>
               
               <div class="form-group">
-                  <label for="message">Votre Message</label>
+                  <label for="message">Votre Message *</label>
                   <textarea placeholder="Ecrivez votre message ici" class="form-control" name="message" id="message" rows="8" required></textarea>
               </div>
 
               <button type="submit" class="btn btn-rdv">Envoyer</button>
             </form>
           </div>
-        -->
+        
         </div>
       </section>
     </div>
