@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <div id="container">
-      <!--NavBar-->
+
+<!--NavBar-->
       <nav class="main-nav">
         <a href="#" class="title">Virginie Perrault</a>
         <ul class="nav-menu">
-          <li><a href="#qui-suis-je">Qui suis-je?</a></li>
-          <li><a href="#prestations">Prestations</a></li>
-          <li><a href="#">Avis</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#qui-suis-je" class="nav-link">Qui suis-je?</a></li>
+          <li><a href="#prestations" class="nav-link">Prestations</a></li>
+          <li><a href="#avis" class="nav-link">Avis</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <!--<img src="imgs/menu-icon.png" alt="drop down menu icon" id="menu-icon"/>-->
         <div class="hamburger">
@@ -48,13 +50,6 @@
             <a href="#contact" class="btn btn-rdv">Me Contacter</a>
           </div>
 
-        </div>
-        <div class="image-center">
-          <!--<img
-            src="imgs/maxin-image.jpeg"
-            alt="Mother holding baby"
-            id="main-image"
-          />-->
         </div>
       </section>
 
@@ -102,36 +97,39 @@
         </p>
 
         <div id="prestations-grid">
+
           <div id="massage-bebe" class="grid-item">
             <h3 class="grid-heading">Atelier Massage Bébé</h3>
-            <div class="prestations-details">
+            
               <img
                 src="imgs/massage-bebe.jpg"
                 alt="massage bébé"
                 class="prestations-image"
               />
-              <div class="info">
                 <p>
                   Atelier de 5 séances qui vous permettront de découvrir le massage
                   complet de votre bébé et d'en apprécier les bienfaits.
                 </p>
-                <p class="extra-info hidden">
-                  Le massage permet de créer avec son bébé un lien d'attachement et
-                  de sécurité mais aussi de stimuler tous les systèmes vitaux et
-                  soulager les coliques et la constipation et permet au bébé de se
-                  relaxer (amélioration du sommeil). 1ère séance: massage des jambes
-                  2ème séance: massage du ventre et coliques 3ème séance: massage
-                  poitrine et bras 4ème séance: massage visage et dos 5ème séance:
-                  massage complet 5 Séances de 1h30 minutes • 200 € Séance
-                  découverte 60€
-                </p>
-                
-              </div>
-              
-            </div>
-            <div class="buttons-test">
-              <button class="btn btn-esp">En Savoir Plus</button>
-              <button class="btn btn-rdv">Prendre Rendez-Vous</button>
+                <div class="extra-info hidden" id="long-mb">
+                  <p>
+                    Le massage permet de créer avec son bébé un lien d'attachement et
+                    de sécurité mais aussi de stimuler tous les systèmes vitaux et
+                    soulager les coliques et la constipation et permet au bébé de se
+                    relaxer (amélioration du sommeil).
+                  </p>
+                    <ul>
+                      <li>1ère séance: massage des jambes</li>
+                      <li>2ème séance: massage du ventre et coliques</li>
+                      <li>3ème séance: massage poitrine et bras</li>
+                      <li>4ème séance: massage visage et dos</li>
+                      <li>5ème séance: massage complet</li>
+                    </ul>
+                    <p>5 Séances de 1h30 minutes • 200 €</p>
+                    <p>Séance découverte 60€</p>
+                </div>
+            <div class="buttons">
+              <button class="btn btn-esp" id="esp-massage-bebe">En Savoir Plus</button>
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
 
@@ -142,24 +140,28 @@
               alt="portage en écharpes"
               class="prestations-image"
             />
-            <p id="brief-pe">
+            <p id="short-pe">
               Atelier d'apprentissage à l'utilisation d'écharpes de portage
               JPMBB durant les premières années de votre bébé.
             </p>
-            <p id="extra-info-pe" class="hidden">
-              Atelier d'apprentissage à l'utilisation d'écharpes de portage
-              JPMBB durant les premières années de votre bébé. Le bébé a un
-              besoin fondamental de se sentir contenu et enveloppé par l'adulte.
-              Le portage en écharpe permet au bébé porté de relâcher ses
-              muscles. La digestion est alors plus efficace et cela diminue les
-              coliques et les reflux. Le sommeil est favorisé par le bercement.
-            </p>
-            <p class="price">1 heure • 60 €</p>
+            <div id="long-pe" class="extra-info hidden">
+              <p>
+                Atelier d'apprentissage à l'utilisation d'écharpes de portage
+                JPMBB durant les premières années de votre bébé. Le bébé a un
+                besoin fondamental de se sentir contenu et enveloppé par l'adulte.
+                Le portage en écharpe permet au bébé porté de relâcher ses
+                muscles. La digestion est alors plus efficace et cela diminue les
+                coliques et les reflux. Le sommeil est favorisé par le bercement.
+              </p>
+              <p class="price">1 heure • 60 €</p>
+            </div>
             <div class="buttons">
               <button class="btn btn-esp" id="esp-portage-echarpe">En Savoir Plus</button>
-              <button class="btn btn-rdv">Prendre Rendez-Vous</button>
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
+
+
           <div id="massage-femme-enceinte" class="grid-item">
             <h3 class="grid-heading">Massage Femme Enceinte ayurvéda</h3>
             <img
@@ -167,24 +169,28 @@
               alt="massage femme enceinte"
               class="prestations-image"
             />
-            <p>
+            <p class="hidden">
               Massage relaxant et apaisant qui vous soulagera durant la
               grossesse de toute les tensions au niveau du dos et améliorera la
               circulation sanguine et la digestion.
             </p>
-            <p class="extra-info hidden">
-              Massage relaxant et apaisant qui vous soulagera durant la
-              grossesse de toute les tensions au niveau du dos et améliorera la
-              circulation sanguine et la digestion. Le massage ayurvédique est
-              un massage complet du corps. Le massage se pratique à partir du
-              4ème mois de grossesse.
-            </p>
-            <p class="price hidden">1 heure • 60 €</p>
+            <div class="extra-info">
+              <p>
+                Massage relaxant et apaisant qui vous soulagera durant la
+                grossesse de toute les tensions au niveau du dos et améliorera la
+                circulation sanguine et la digestion. Le massage ayurvédique est
+                un massage complet du corps. Le massage se pratique à partir du
+                4ème mois de grossesse.
+              </p>
+              <p class="price">1 heure • 60 €</p>
+            </div>
             <div class="buttons">
-              <button class="btn btn-esp">En Savoir Plus</button>
-              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+              <button class="btn btn-esp hidden">En Savoir Plus</button>
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
+
+
           <div id="conseils" class="grid-item">
             <h3 class="grid-heading">Conseils en Périnatalité</h3>
             <img
@@ -204,6 +210,8 @@
               <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
+
+
           <div id="papas" class="grid-item">
             <h3 class="grid-heading">Groupe de Parole Pour les Papas</h3>
             <img
@@ -211,27 +219,32 @@
               alt="papa avec bébé"
               class="prestations-image"
             />
-            <p>
+            <p id="short-gpp">
               Je propose des tables rondes pour les futurs papas. Ils auront la
               possibilité de poser des questions sur la grossesse,
               l’accouchement et l’arrivée de bébé. Tous les thèmes sont abordés.
             </p>
-            <p class="extra-info hidden">
-              L’arrivée d’un enfant est un événement heureux qui touche
-              l’ensemble de la famille. Le papa se sent de plus en plus concerné
-              mais beaucoup moins informé que la maman. Je propose des tables
-              rondes pour les futurs papas. Ils auront la possibilité de poser
-              des questions sur la grossesse, l’accouchement et l’arrivée de
-              bébé. Tous les thèmes sont abordés, y compris le congé paternité
-              ou le retour à la maison, les soins du bébé, les couches et les
-              biberons.
-            </p>
-            <p class="price">1 heure • 40 €</p>
+          
+            <div class="extra-info hidden" id="long-gpp">
+              <p>
+                L’arrivée d’un enfant est un événement heureux qui touche
+                l’ensemble de la famille. Le papa se sent de plus en plus concerné
+                mais beaucoup moins informé que la maman. Je propose des tables
+                rondes pour les futurs papas. Ils auront la possibilité de poser
+                des questions sur la grossesse, l’accouchement et l’arrivée de
+                bébé. Tous les thèmes sont abordés, y compris le congé paternité
+                ou le retour à la maison, les soins du bébé, les couches et les
+                biberons.
+              </p>
+              <p class="price">1 heure • 40 €</p>
+            </div>
             <div class="buttons">
-              <button class="btn btn-esp">En Savoir Plus</button>
-              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+              <button class="btn btn-esp" id="esp-gpp">En Savoir Plus</button>
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
+
+
           <div id="massage-ecole" class="grid-item">
             <h3 class="grid-heading">
               Atelier Massage à l’École et à la Crèche
@@ -245,12 +258,8 @@
               Le massage favorise un climat de partage et de respect. L'enfant
               apprendra à être à l'écoute de lui-même et des autres.
             </p>
-            <div class="extra-info hidden">
-              <p>
-                Le massage favorise un climat de partage et de respect. L'enfant
-                apprendra à être à l'écoute de lui-même et des autres.
-              </p>
-              <p>Pour les plus grands: VOYAGE AUTOUR DES 5 CONTINENTS</p>
+            <div class="extra-info hidden" id="long-me">
+              <p><strong>Pour les plus grands:</strong> VOYAGE AUTOUR DES 5 CONTINENTS</p>
               <p>
                 5 petites séances de massage en duo ou les enfants apprennent à
                 se masser de façon ludique.
@@ -262,7 +271,7 @@
                 <li>4. Les jambes en ASIE</li>
                 <li>5. Les pieds en EUROPE</li>
               </ol>
-              <p>Pour les petits et les moyens:</p>
+              <p><strong>Pour les petits et les moyens:</strong></p>
               <p>
                 3 petites séances de massage en duo ou les enfants apprennent à
                 se masser de façon ludique.
@@ -275,11 +284,16 @@
               <p>1 heure • Prix variable</p>
             </div>
             <div class="buttons">
-              <button class="btn btn-esp">En Savoir Plus</button>
-              <button class="btn btn-rdv hidden">Prendre Rendez-Vous</button>
+              <button class="btn btn-esp" id="esp-me">En Savoir Plus</button>
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
         </div>
+      </section>
+
+<!--Avis Section-->
+      <section id="avis">
+        <h2 class="section-heading">Avis Clients</h2>
       </section>
 
 <!--Contact Section-->
@@ -298,7 +312,7 @@
             <div class="contact-group pink">
               <img src="imgs/icon-email.png" alt="email">
               <p>Email: </p>
-              <a href="mailto: perrault.virginie@gmail.com">perrault.virginie@gmail.com</a>
+              <a href="mailto:perrault.virginie@gmail.com">perrault.virginie@gmail.com</a>
             </div>
             
             <div class="contact-group turquoise">
@@ -307,17 +321,17 @@
               <p>164 quinquies rue d’aguesseau, 92100 Boulogne-Billancourt</p>
             </div>
              
-              <div class="contact-group flex light-purple">
+              <div id="sm-group" class="contact-group light-purple">
                 <p>Réseaux sociaux:</p>
-                <a href="https://www.facebook.com/ACCOMPAGNANTEPERINATALE/" target="_blank"><img src="imgs/facebook-icon.png" alt="facebook logo" class="sm-logo fb-logo"> </a>
-                <a href="https://www.instagram.com/virginie.perrault/" target="_blank"><img src="imgs/instagram-logo.png" alt="instagram logo" class="sm-logo"> </a>
+                <a href="https://www.facebook.com/ACCOMPAGNANTEPERINATALE/" target="_blank" class="res-soc"><img src="imgs/facebook-icon.png" alt="facebook logo" class="sm-logo fb-logo"><span>Virginie Perrault, Bien naître et Bien être</span> </a>
+                <a href="https://www.instagram.com/virginie.perrault/" target="_blank" class="res-soc"><img src="imgs/instagram-logo.png" alt="instagram logo" class="sm-logo"><span>Virginie Perrault</span></a>
               </div>
             
           </div>
               <!--
                 <div class="contact-group">
                   <a href="https://www.facebook.com/ACCOMPAGNANTEPERINATALE/" target="_blank"><img src="imgs/facebook-icon.png" alt="facebook logo" class="sm-logo fb-logo"> Virginie Perrault, Bien naître et Bien être</a>
-                  <a href="https://www.instagram.com/virginie.perrault/" target="_blank"><img src="imgs/instagram-logo.png" alt="instagram logo" class="sm-logo"> Virginie Perrault</a>
+                  <a href="https://www.instagram.com/virginie.perrault/" target="_blank"><img src="imgs/instagram-logo.png" alt="instagram logo" class="sm-logo"> </a>
                 </div>
             -->
 
@@ -338,7 +352,7 @@
               
               <div class="form-group">
                   <label for="message">Votre Message *</label>
-                  <textarea placeholder="Ecrivez votre message ici" class="form-control" name="message" id="message" rows="8" required></textarea>
+                  <textarea placeholder="Ecrivez votre message ici" class="form-control" name="message" id="message" rows="10" required></textarea>
               </div>
 
               <button type="submit" class="btn btn-rdv">Envoyer</button>
@@ -347,6 +361,10 @@
         
         </div>
       </section>
+      <footer id="footer">
+        <a href="#">Mentions Légales</a>
+        <p>Copyright 2021</p>
+      </footer>
     </div>
     <script src="app.js"></script>
   </body>

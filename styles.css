@@ -38,6 +38,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--clr-headings);
 }
 
 ol, ul {
@@ -61,6 +62,7 @@ ol, ul {
   font-family: var(--ff-text-primary);
   font-size: 1rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .btn-esp {
@@ -81,11 +83,6 @@ ol, ul {
   flex-direction: column;
 }
 
-.buttons-test {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-}
 
 /*NavBar*/
 
@@ -97,13 +94,8 @@ ol, ul {
   align-items: center;
   box-shadow: var(--text-shadow);
   background-color:  var(--clr-nav);
+  /*background-image: linear-gradient(var(--clr-purple),var(--clr-nav));*/
 }
-/*
-.main-nav > img {
-  height: 8vh;
-  margin: 1rem;
-  border-radius: 0.5rem;
-}*/
 
 ul a {
   font-family: var(--ff-text-primary);
@@ -159,6 +151,7 @@ ul a:hover {
   top: 14vh;
   flex-direction: column;
   background-color: var(--clr-nav);
+  background-image: linear-gradient(var(--clr-nav), var(--clr-purple));
   width: 100%;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -166,7 +159,7 @@ ul a:hover {
   transition: 0.3s;
   box-shadow: var(--text-shadow);
   z-index: 10;
-
+  padding-bottom: 10vh;
 }
 
 .nav-menu.active {
@@ -176,9 +169,6 @@ ul a:hover {
 .nav-menu li {
   margin: 2rem 0;
 }
-
-
-
 
 /*Headings*/
 
@@ -194,7 +184,6 @@ ul a:hover {
   font-size: 3rem;
   line-height: 1.5;
 }
-
 
 #headings h2 {
   font-family: var(--ff-headings);
@@ -239,20 +228,6 @@ ul a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50% 25%;
-}
-
-.image-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: -1;
-}
-
-#main-image {
-  width: 100%;
-  opacity: 0.6;
 }
 
 .header-buttons {
@@ -304,7 +279,7 @@ ul a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem 0;
   margin: 1rem 0;
 
@@ -350,6 +325,11 @@ ul a:hover {
   background-color: var(--clr-ecole);
 }
 
+#massage-ecole ol>li,
+#massage-bebe ul>li {
+  padding: 0;
+}
+
 /*Contact Section*/
 
 .fb-logo {
@@ -390,9 +370,10 @@ ul a:hover {
 }
 
 .contact-group {
-  background-color: #ffffff;
+ /* background-color: #ffffff;*/
   border-radius: 2rem;
   align-items: center;
+  justify-content: center;
   font-size: 1rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -415,6 +396,34 @@ ul a:hover {
 .light-purple {
   background-color: var(--clr-light-purple);
 }
+
+#contact a:hover{
+  font-weight: bold;
+}
+
+#sm-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.res-soc {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.res-soc span {
+  display: none;
+}
+
+#footer {
+  display: flex;
+  background-color: var(--clr-light-purple);
+  margin-top:2vh;
+  color: #ffffff;
+}
+
+
 
 /*MEDIA QUERIES*/
 
@@ -444,9 +453,6 @@ ul a:hover {
   .image-center {
     max-width: 75vh;
     left: 80%;
-  }
-  #main-image {
-    opacity: 1;
   }
 
   .header-buttons {
@@ -480,6 +486,7 @@ ul a:hover {
   .contact-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
   }
 
   .form-group {
@@ -508,11 +515,13 @@ ul a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-image: none;
     align-items: center;
     z-index: 15;
     left: 0;
     top: 0;
     box-shadow: none;
+    padding-bottom: 0;
 }
 
 .nav-menu li {
@@ -528,7 +537,7 @@ ul a:hover {
   }
 
   .title {
-    color: var(--clr-purple);
+    color: #7D4284;
     font-size: 3vh;
     font-weight: bold;
     padding: 0 1rem;
@@ -543,12 +552,6 @@ ul a:hover {
   #qui-suis-je{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-  }
-
-  .prestations-details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   
   #photo-container {
@@ -568,6 +571,13 @@ ul a:hover {
   width: 80%;
 }
 
+#sm-group {
+  flex-direction: column;
+}
+
+.res-soc span {
+  display: flex;
+}
 
 }
 
