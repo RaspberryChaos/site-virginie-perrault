@@ -5,6 +5,7 @@
   --clr-btn-txt: #ffffff;
   --clr-light-purple: #e4bbe8;
   --clr-purple: #c182c8;
+  --clr-darkpurple: #7D4284;
   --clr-btn-pink: #faa4ab;
   --clr-btn-text: #ffffff;
   --clr-nav: #E0CCE3;
@@ -61,17 +62,45 @@ ol, ul {
   border: none;
   font-family: var(--ff-text-primary);
   font-size: 1rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  margin: 0.5rem;
 }
 
 .btn-esp {
   background-color: var(--clr-purple);
+  background-image: radial-gradient(var(--clr-purple),var(--clr-darkpurple));
 }
+
+.btn-esp:hover {
+  background-image:none;
+  background-color: var(--clr-darkpurple);
+}
+
 
 .btn-rdv {
   background-color: var(--clr-btn-pink);
+  background-image: radial-gradient(var(--clr-btn-pink),#F05F76);
 }
+
+.btn-rdv:hover {
+  background-image: none;
+  background-color: #F05F76;
+}
+
+.btn-esp:active,
+.btn-rdv:active {
+  transform: translateY(4px);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
 
 .flex-row {
   display: flex;
@@ -231,7 +260,6 @@ ul a:hover {
 }
 
 .header-buttons {
-  border: 1px solid yellow;
   margin: 2rem 0;
 }
 
@@ -418,11 +446,22 @@ ul a:hover {
 
 #footer {
   display: flex;
-  background-color: var(--clr-light-purple);
-  margin-top:2vh;
+  background-color: var(--clr-darkpurple);
+  margin-top: 5vh;
+  height: 8vh;
+  color: #ffffff;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+#footer a {
   color: #ffffff;
 }
 
+#footer a:hover {
+  opacity: 0.5;
+}
 
 
 /*MEDIA QUERIES*/
@@ -443,7 +482,6 @@ ul a:hover {
 @media (min-width: 768px) {
   #headings {
     width: 60%;
-    border: 1px dashed pink;
   }
 
   #headings h1 {
@@ -537,7 +575,7 @@ ul a:hover {
   }
 
   .title {
-    color: #7D4284;
+    color: var(--clr-darkpurple);
     font-size: 3vh;
     font-weight: bold;
     padding: 0 1rem;
