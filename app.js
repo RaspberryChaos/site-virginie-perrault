@@ -27,24 +27,24 @@ const btnGPP = document.getElementById("esp-gpp");
 const btnME = document.getElementById("esp-me");
 
 btnMB.addEventListener("click", (e) => {
-    e.target.textContent = e.target.textContent === "Moins" ? "En Savoir Plus" : "Moins";
+    e.target.textContent = e.target.textContent === "Voir Moins" ? "En Savoir Plus" : "Voir Moins";
     document.getElementById("long-mb").classList.toggle("hidden");
 });
 
 btnPE.addEventListener("click", (e) => {
-    e.target.textContent = e.target.textContent === "Moins" ? "En Savoir Plus" : "Moins";
+    e.target.textContent = e.target.textContent === "Voir Moins" ? "En Savoir Plus" : "Voir Moins";
     document.getElementById("short-pe").classList.toggle("hidden");
     document.getElementById("long-pe").classList.toggle("hidden");
 });
 
 btnGPP.addEventListener("click", (e) => {
-    e.target.textContent = e.target.textContent === "Moins" ? "En Savoir Plus" : "Moins";
+    e.target.textContent = e.target.textContent === "Voir Moins" ? "En Savoir Plus" : "Voir Moins";
     document.getElementById("short-gpp").classList.toggle("hidden");
     document.getElementById("long-gpp").classList.toggle("hidden");
 });
 
 btnME.addEventListener("click", (e) => {
-    e.target.textContent = e.target.textContent === "Moins" ? "En Savoir Plus" : "Moins";
+    e.target.textContent = e.target.textContent === "Voir Moins" ? "En Savoir Plus" : "Voir Moins";
     document.getElementById("long-me").classList.toggle("hidden");
 });
 
