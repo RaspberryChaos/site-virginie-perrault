@@ -34,7 +34,6 @@ body {
   font-family: var(--ff-text-primary);
   font-size: 1.25rem;
   color: var(--clr-headings);
-  border: 1px solid red;
 }
 
 a {
@@ -49,7 +48,6 @@ ol, ul {
 #container {
   width: 100%;
   text-align: center;
-  border: 1px solid blue;
 }
 
 .btn {
