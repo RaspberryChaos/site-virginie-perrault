@@ -474,6 +474,10 @@ ul a:hover {
   h1.profile-heading{
     font-size: 2.5rem;
   }
+
+  #landing-page {
+    background-size: 60%;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -504,6 +508,7 @@ ul a:hover {
     background-image: url("../imgs/main-image.jpeg");
     background-size: 60%;
     background-position: right 25%;
+    z-index: -1;
   }
 
   .location {
@@ -620,7 +625,7 @@ ul a:hover {
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
   #landing-page {
-    background-size: 30%;
+    background-size: 28%;
   }
   ul a {
     font-size: 2.2rem;
