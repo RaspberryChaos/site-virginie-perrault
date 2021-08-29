@@ -132,12 +132,12 @@
                     <p>Séance découverte 60€</p>
                 </div>
             <div class="buttons">
-              <button class="btn btn-esp" id="esp-massage-bebe">En Savoir Plus</button>
+              <button class="btn btn-esp more-info" id="esp-massage-bebe" value="mb">En Savoir Plus</button>
               <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
 
-          <div id="portage-echarpe" class="grid-item">
+          <!-- <div id="portage-echarpe" class="grid-item">
             <h3 class="grid-heading">Atelier Portage en Écharpes</h3>
             <img
               src="imgs/portage-en-echarpes.jpg"
@@ -163,59 +163,8 @@
               <button class="btn btn-esp" id="esp-portage-echarpe">En Savoir Plus</button>
               <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
-          </div>
-
-
-          <div id="massage-femme-enceinte" class="grid-item">
-            <h3 class="grid-heading">Massage Femme Enceinte ayurvéda</h3>
-            <img
-              src="imgs/massage-femme-enceinte.jpg"
-              alt="massage femme enceinte"
-              class="prestations-image"
-            />
-            <p class="hidden">
-              Massage relaxant et apaisant qui vous soulagera durant la
-              grossesse de toute les tensions au niveau du dos et améliorera la
-              circulation sanguine et la digestion.
-            </p>
-            <div class="extra-info">
-              <p>
-                Massage relaxant et apaisant qui vous soulagera durant la
-                grossesse de toute les tensions au niveau du dos et améliorera la
-                circulation sanguine et la digestion. Le massage ayurvédique est
-                un massage complet du corps. Le massage se pratique à partir du
-                4ème mois de grossesse.
-              </p>
-              <p class="price">1 heure 30 minutes • 90 €</p>
-            </div>
-            <div class="buttons">
-              <button class="btn btn-esp hidden">En Savoir Plus</button>
-              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
-            </div>
-          </div>
-
-
-          <div id="conseils" class="grid-item">
-            <h3 class="grid-heading">Conseils en Périnatalité</h3>
-            <img
-              src="imgs/conseils.jpg"
-              alt="body et accessoires pour bébé"
-              class="prestations-image"
-            />
-            <p>
-              Auxiliaire de puériculture de formation, mes conseils en
-              périnatalité sont un accompagnement des futurs parents visant à
-              leur apporter de l’écoute, un soutien, des informations et une
-              orientation.
-            </p>
-            <p class="price">1 heure • 40€</p>
-
-            <div class="buttons">
-              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
-            </div>
-          </div>
-
-
+          </div> -->
+          
           <div id="papas" class="grid-item">
             <h3 class="grid-heading">Groupe de Parole Pour les Papas</h3>
             <img
@@ -243,7 +192,55 @@
               <p class="price">1 heure • 40€</p>
             </div>
             <div class="buttons">
-              <button class="btn btn-esp" id="esp-gpp">En Savoir Plus</button>
+              <button class="btn btn-esp more-info" id="esp-gpp" value="groupe_parole_papa">En Savoir Plus</button>
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
+            </div>
+          </div>
+
+          <div id="massage-femme-enceinte" class="grid-item">
+            <h3 class="grid-heading">Massage Femme Enceinte ayurvéda</h3>
+            <img
+              src="imgs/massage-femme-enceinte.jpg"
+              alt="massage femme enceinte"
+              class="prestations-image"
+            />
+            <p class="hidden">
+              Massage relaxant et apaisant qui vous soulagera durant la
+              grossesse de toute les tensions au niveau du dos et améliorera la
+              circulation sanguine et la digestion.
+            </p>
+            <div class="extra-info">
+              <p>
+                Massage relaxant et apaisant qui vous soulagera durant la
+                grossesse de toute les tensions au niveau du dos et améliorera la
+                circulation sanguine et la digestion. Le massage ayurvédique est
+                un massage complet du corps. Le massage se pratique à partir du
+                4ème mois de grossesse.
+              </p>
+              <p class="price">1 heure 30 minutes • 90 €</p>
+            </div>
+            <div class="buttons">
+              <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
+            </div>
+          </div>
+
+
+          <div id="conseils" class="grid-item">
+            <h3 class="grid-heading">Conseils en Périnatalité</h3>
+            <img
+              src="imgs/conseils.jpg"
+              alt="body et accessoires pour bébé"
+              class="prestations-image"
+            />
+            <p>
+              Auxiliaire de puériculture de formation, mes conseils en
+              périnatalité sont un accompagnement des futurs parents visant à
+              leur apporter de l’écoute, un soutien, des informations et une
+              orientation.
+            </p>
+            <p class="price">1 heure • 40€</p>
+
+            <div class="buttons">
               <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
@@ -288,7 +285,7 @@
               <p>1 heure • Prix variable</p>
             </div>
             <div class="buttons">
-              <button class="btn btn-esp" id="esp-me">En Savoir Plus</button>
+              <button class="btn btn-esp more-info" id="esp-me" value="me">En Savoir Plus</button>
               <a href="#contact" class="btn btn-rdv">Prendre Rendez-Vous</a>
             </div>
           </div>
@@ -343,7 +340,7 @@
           <div id="contact-form">
             <h2>Formulaire de Contact</h2>
             <form target="_blank" rel="noopener noreferrer" action="https://formsubmit.co/ailiem134@hotmail.com" method="POST">
-              
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/merci.html">
               <div class="form-group">
                 <label for="nom">Votre Nom *</label>
                 <input type="text" name="nom" id="nom" class="form-control" placeholder="Votre nom" required>
@@ -370,6 +367,7 @@
         <p>&copy; Copyright 2021</p>
       </footer>
     </div>
+    <script src="nav.js"></script>  
     <script src="app.js"></script>
   </body>
 </html>
