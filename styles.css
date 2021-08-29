@@ -16,7 +16,7 @@
   --clr-nav: #e0cce3;
 
   --clr-massage-bebe: rgba(182, 178, 233, 0.75);
-  --clr-portage-echarpe: rgba(123, 215, 208, 0.75);
+  --clr-yoga-kids: rgba(123, 215, 208, 0.75);
   --clr-massage-femme-enceinte: rgba(251, 202, 227, 0.75);
   --clr-conseil: rgba(227, 176, 232, 0.75);
   --clr-papa: rgba(181, 209, 250, 0.75);
@@ -330,22 +330,6 @@ ul a:hover {
   background-color: var(--clr-massage-bebe);
 }
 
-#portage-echarpe {
-  background-color: var(--clr-portage-echarpe);
-}
-
-#massage-femme-enceinte {
-  background-color: var(--clr-massage-femme-enceinte);
-}
-
-#conseils {
-  background-color: var(--clr-conseil);
-}
-
-#papas {
-  background-color: var(--clr-papa);
-}
-
 #massage-ecole {
   background-color: var(--clr-ecole);
 }
@@ -412,7 +396,7 @@ textarea {
 }
 
 .turquoise {
-  background-color: var(--clr-portage-echarpe);
+  background-color: var(--clr-yoga-kids);
 }
 
 .pink {
