@@ -55,6 +55,7 @@ ul {
 #container {
   width: 100%;
   text-align: center;
+  min-height: 100vh;
 }
 
 .btn {
@@ -116,6 +117,10 @@ ul {
   box-shadow: var(--text-shadow);
   background-color: var(--clr-nav);
   /*background-image: linear-gradient(var(--clr-purple),var(--clr-nav));*/
+}
+
+ul li {
+  text-align: center;
 }
 
 ul a {
@@ -446,6 +451,8 @@ textarea {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  font-size: 1rem;
 }
 
 #footer a {
@@ -455,6 +462,15 @@ textarea {
 #footer a:hover {
   opacity: 0.5;
 }
+
+/*Thanks Page*/
+
+.space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 /*MEDIA QUERIES*/
 
