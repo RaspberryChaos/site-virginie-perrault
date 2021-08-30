@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Virginie Perrault - Bien naître et bien être</title>
+      <link rel="shortcut icon" href="imgs/favicon.ico" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="styleBonCadeaux.css" />
+    </head>
+    <body>
+      <div id="container" class="space-between">
+        <!--NavBar-->
+        <nav class="main-nav">
+          <ul class="nav-menu">
+            <li><a href="/" class="nav-link">Acceuil</a></li>
+            <li><a href="/#qui-suis-je" class="nav-link">Qui suis-je?</a></li>
+            <li><a href="/#prestations" class="nav-link">Prestations</a></li>
+            <li><a href="/#avis" class="nav-link">Avis</a></li>
+            <li><a href="/#bons-cadeaux" class="nav-link">Bons Cadeaux</a></li>
+            <li><a href="/#contact" class="nav-link">Contact</a></li>
+          </ul>
+          
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+
+        <!--Contact Section-->
+        <section id="contact">
+          <h2 class="section-heading">Contact</h2>
+          <div class="purple-container contact-container">
+            <div id="contact-form">
+              <h2>Formulaire de Demande de Bon Cadeau</h2>
+              <form
+                target="_blank"
+                rel="noopener noreferrer"
+                action="https://formsubmit.co/ailiem134@hotmail.com"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500/merci.html"
+                />
+                <div class="form-group">
+                  <label for="nom">Votre Nom *</label>
+                  <input
+                    type="text"
+                    name="nom"
+                    id="nom"
+                    class="form-control"
+                    placeholder="Votre nom"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Votre Adresse Mail"
+                    required
+                  />
+                </div>
+
+                <div class="group-cadeau">
+                    <div>
+                        <label for="bons-cadeaux">Bon Cadeau :</label>
+                          <select name="bons-cadeaux" id="bons-cadeaux">
+                            <option value="choix">Choisir un Bon Cadeau</option>
+                            <option value="massage-bebe-5seances">
+                              Massage Bébé - 5 séances
+                            </option>
+                            <option value="massage-bebe-seance-decoverte">
+                              Massage Bébé - Séance Decouvert
+                            </option>
+                            <option value="massage-femme-enceinte">
+                              Massage Femme Enceinte Ayurveda
+                            </option>
+                          </select>
+
+                    </div>
+                  <div class="quantity">
+                    <label for="quantity">Quantité : </label>
+                    <input
+                      type="number"
+                      id="quantité"
+                      name="quantité"
+                      min="1"
+                      max="100"
+                      value="1"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Votre Message *</label>
+                  <textarea
+                    placeholder="Ecrivez votre message ici"
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-rdv">Envoyer</button>
+              </form>
+            </div>
+
+            <div class="contact-details">
+              <h2>Coordonnées</h2>
+              <div class="contact-group blue">
+                <img src="imgs/icon-phone.png" alt="téléphone" id="phone" />
+                <p>Téléphone:</p>
+                <a href="tel:0660050162">06.60.05.01.62</a>
+              </div>
+
+              <div class="contact-group pink">
+                <img src="imgs/icon-email.png" alt="email" />
+                <p>Email:</p>
+                <a href="mailto:perrault.virginie@gmail.com"
+                  >perrault.virginie@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-group turquoise">
+                <img src="imgs/icon-location.png" alt="adresse icon" />
+                <p>Adresse:</p>
+                <p>164 quinquies rue d’aguesseau, 92100 Boulogne-Billancourt</p>
+              </div>
+
+              <div id="sm-group" class="contact-group light-purple">
+                <p>Réseaux sociaux:</p>
+                <a
+                  href="https://www.facebook.com/ACCOMPAGNANTEPERINATALE/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="res-soc"
+                  ><img
+                    src="imgs/facebook-icon.png"
+                    alt="facebook logo"
+                    class="sm-logo fb-logo"
+                  /><span>Virginie Perrault, Bien naître et Bien être</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/virginie.perrault/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="res-soc"
+                  ><img
+                    src="imgs/instagram-logo.png"
+                    alt="instagram logo"
+                    class="sm-logo"
+                  /><span>Virginie Perrault</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer id="footer">
+          <a href="#">Mentions Légales</a>
+          <p>&copy; Copyright 2021</p>
+        </footer>
+      </div>
+      <script src="nav.js"></script>
+    </body>
+  </html>
+</html>
