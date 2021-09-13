@@ -553,7 +553,7 @@ textarea {
 
   #grid-bc {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
     margin: 1rem;
   }
@@ -639,6 +639,10 @@ textarea {
 
   .res-soc span {
     display: flex;
+  }
+
+  #grid-bc {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
